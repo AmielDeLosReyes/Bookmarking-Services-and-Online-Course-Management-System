@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+	<course>
+		<courseName>Code Editor Tutorial</courseName>
+		<courseAuthor>Codevolution</courseAuthor>
+		<courseDescription>This is a tutorial about Visual Studio Code. In creating web applications, we need a code editor. Visual Studio Code is one of the best code editor, most of the programmers use this. </courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PLC3y8-rFHvwhleivq1QohBZN4d8IdzG3c</courseURL>
+		<courseImage>assets/img/codeEditor.png</courseImage>
+	</course>
+	<course>
+		<courseName>HTML Tutorial</courseName>
+		<courseAuthor>EJ Media</courseAuthor>
+		<courseDescription>This is a tutorial about HTML. HTML stands for Hypertext Markup Language. It is the code to format the web contents. It is the skeleton of the website. Learning HTML is vital for all programmers!</courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PLr6-GrHUlVf_ZNmuQSXdS197Oyr1L9sPB</courseURL>
+		<courseImage>assets/img/htmlImg.png</courseImage>
+	</course>
+	<course>
+		<courseName>CSS Tutorial</courseName>
+		<courseAuthor>EJ Media</courseAuthor>
+		<courseDescription>This is a tutorial about CSS. CSS stands for Cascading Style Sheets. It is the code to format the web contents. It is the presentation of the website. Learning CSS is vital for all programmers!</courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C</courseURL>
+		<courseImage>assets/img/cssImg.png</courseImage>
+	</course>
+	<course>
+		<courseName>JavaScript Tutorial</courseName>
+		<courseAuthor>Telusko</courseAuthor>
+		<courseDescription>This is a tutorial about JS. It stands for JavaScript. It is the code to dynamically manipulate the web contents. It is a programming language. Along with HTML and CSS, these three fundamentals can create any kind of web application.</courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4</courseURL>
+		<courseImage>assets/img/jsImg.png</courseImage>
+	</course>
+	<course>
+		<courseName>Bootstrap Tutorial</courseName>
+		<courseAuthor>The Net Ninja</courseAuthor>
+		<courseDescription>This is a tutorial about Bootstrap. It is a framework for CSS which contains libraries that makes coding with CSS easier. It has built-in features that enables responsiveness on a website.</courseDescription>
+		<courseURL>https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR</courseURL>
+		<courseImage>assets/img/bootstrapImg.png</courseImage>
+	</course>
+	<course>
+		<courseName>jQuery Tutorial</courseName>
+		<courseAuthor>Dani Krossing</courseAuthor>
+		<courseDescription>This is a tutorial about jQuery. It is a framework for JavaScript which contains libraries that makes coding with JavaScript easier. It has built-in features that simplifies HTML DOM manipulation, AJAX technology, and event handling.</courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n</courseURL>
+		<courseImage>assets/img/jqueryImg.png</courseImage>
+	</course>
+	<course>
+		<courseName>React JS Tutorial</courseName>
+		<courseAuthor>Code Stoic</courseAuthor>
+		<courseDescription>This is a tutorial about React JS. Developed by Facebook, it is another framework for JavaScript which contains libraries that makes coding with JavaScript easier. It has built-in features that simplifies implementing interactive UI.</courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PLSsAz5wf2lkK_ekd0J__44KG6QoXetZza</courseURL>
+		<courseImage>assets/img/reactImg.png</courseImage>
+	</course>
+	<course>
+		<courseName>Python Tutorial</courseName>
+		<courseAuthor>edureka!</courseAuthor>
+		<courseDescription>This is a tutorial about Python. Developed by Guido van Rossum, it is another programming language that is used to build websites and softwares. It automates manual tasks and also anylizes data.</courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PL9ooVrP1hQOE4KoZLUP4LgBwFH2IJCQs6</courseURL>
+		<courseImage>assets/img/pythonImg.png</courseImage>
+	</course>
+	<course>
+		<courseName>Django Tutorial</courseName>
+		<courseAuthor>Tech With Tim</courseAuthor>
+		<courseDescription>This is a tutorial about Django. It is a Python web framework that aids with coding with Python faster. It helps with web development security and maintainability. It contains built-in features for better performance.</courseDescription>
+		<courseURL>https://youtube.com/playlist?list=PLzMcBGfZo4-kQkZp-j9PNyKq7Yw5VYjq9</courseURL>
+		<courseImage>assets/img/djangoImg.png</courseImage>
+	</course>
+</courses>

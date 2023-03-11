@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+    <h1 style="text-align:center;">Amiel De Los Reyes' Page</h1>
+    <ul>
+        <li><a href="part1">Part 1</a></li>
+        <li><a href="part2">Part 2</a></li>
+    </ul>
+    <div id="container">
+        <div id="aboutMe">
+            <h1>Assignment 2 COMP 466</h1>
+            <p>My name is Amiel De Los Reyes. My student ID is 3621919.</p>
+            
+            <p>This is Assignment 2 of the course.</p>   
+            <p>I began working on the assignment on March 3, 2023. I completed this assignment on March 12, 2023.</p>
+            <p>Estimated hours I spent on this assignment is 40 hours.</p>
+    </div> <!-- container-->
+        <hr />
+    <h2>Documentation</h2>
+    <h3><u>Original Description and Requirements of the Project</u>:</h3>
+    
+    <p><b>Part 1:</b> For this project, you will be using MySQL and PHP to develop a web application that provides an online bookmarking service to users on the Internet. The requirements are as follows:</p>
+    <ol>
+        <li>The web application should have a good thoughtful interface, with menus and/or navigation buttons.</li>
+        <br />
+        <li>It should have a name or logo shown across all the pages.</li>
+        <br />
+        <li>It should begin with a welcome or greeting message and a list of ten most popular websites that users of the web application have bookmarked.</li>
+        <br />
+        <li>Once signed in, a list of bookmarks the user has made should be displayed, and the user can browse any web site in the list in a new browser tab or window by clicking a link to the site.</li>
+        <br />
+        <li>The user can add new websites to the list and edit and delete any of the existing ones in the list</li>
+        <br />
+        <li>When adding or editing, user input needs to be validated using JavaScript, to make sure the URLs are not only correct but also active.</li>
+    </ol>
+    <br />
+    <br />
+
+    <p><b>Part 2:</b> In this part of the assignment, you are required to develop a small-scale online learning management system that can be used to deliver online courses to learners.</p>
+
+    <p>To that end, you will have to think about what these online courses are, how they can be developed and how they should be stored on the web server, how they can be retrieved from the server, how they should be delivered to a web browser, and then rendered/presented properly on the web browser.</p>
+    
+    <p>The development of online courses is the collaboration of efforts of subject matter experts (SMEs) and experts in computing and web technology. It is very common that those SMEs do not know much about computing, and don’t know how to use HTML and other web technologies needed to present an attractive course, but they should be quite comfortable with languages and terms used in education. So, the first technical step you need to take is to design a SME-friendly language for marking up educational materials, EML in our term (just another XML like you created for marking up your resume), for the SMEs to use. The EML you design may be a comprehensive one for marking up the contents for an entire course, or several XML languages in small scale for different components of a course. For example, you may have an EML for a lesson/lecture delivered in just a teaching/learning session, an EML for marking up quizzes, and an EML for marking up assignments, etc. You may look at some existing languages by searching for educational markup language in Google or other search engine.</p>
+    
+    <p>After SMEs (for this assignment, you will be the SME) have written the course contents in your EML(s), the documents must be stored on the server before they can be delivered to the learners on the web. You may think that you can save each of the documents written in your EML as a file, like the resume file you wrote for assignment 1, but this is not practical. Files may work when there is just one or only a few learning documents, but when there are many, as happens in practical situations, the documents become unmanageable. That’s why we need a database.</p>
+    
+    <p>The next technical step is to design the database table or tables. Over the years, I have seen different designs from students in the course. The most simple and straightforward one is to have a single table. In the table each row contains information for a lesson or quiz, including the actual content written in your EML. To make the learning contents retrievable and manageable, you will need fields to identify the course and the unit the lesson or quiz belongs to. You may also keep the details of the courses and units in the same table for the purpose of this assignment project, though you wouldn’t do that in practice because it is really inefficient; in a real world situation separate tables would be used to store information about courses and units.</p>
+    
+    <p>To deliver the course contents (lessons and quizzes in our context) in an LMS, you will need a user management module to allow learners to register and get an account in the system, like you have done in part 1 of this assignment, and then allow registered learners to login. A user who has logged into the system can then view a list of lessons available to select and a list of selected lessons and start or continue to study a selected lesson.</p>
+    
+    <p>To present a lesson to a learner, the backend of your LMS will need to navigate through the database to find the right lesson or quiz that the learner has requested, and them retrieve the actual content in EML. For the content to be properly rendered or presented on learner’s browser, you need to translate the content in your EML to HTML. We call this process parsing. Instead of using XSLT as you did for the first assignment, parsing EML to HTML needs to be done with PHP on the server-side, which is the last important technical step for this project – to write a parser in PHP.</p>
+    
+    <p>When doing this project, or any project for the assignments, you must take a system approach. That’s why students are expected to have completed comp 361 or a similar course on system analysis and design before taking this course.</p>
+    <br />
+    <br />
+
+    <h3><u>Interpretation of the Assignment Project and Requirements</u>:</h3>
+    <p><b>Part 1:</b> This part requires me to do server-side programming using MySQL and PHP. These include signing up, signing in, signing out, adding a user, and adding a website to bookmark. These all require a database for the data to be stored and that is the main purpose of this part of the assignment.</p>
+    <p><b>Part 2:</b> The main purpose of this part of the assignment is to create a small scale website. This now includes functionalities such as signing up, signing in, signing out, adding a user, adding a course, and parsing an XML file and displaying it to HTML. It also requires the AJAX technology.</p>
+    <br />
+
+    <h3><u>Analysis and Design</u>:</h3>
+    <p>Part 1 will now be connected to a personal web server in order to store data coming from the client-side. Therefore, database design is also important. It is vital to do database normalization to reduce redundancy, so there are relationships between the tables in the database. Data is collected through form inputs and then data is stored to the database. Connection should be established first by using PHP and MySQL with the correct credentials. Then, we can dynamically work with the data either by validating, printing/displaying, doing any logical methods, and more.</p>
+    <p>Part 2 requires a database to store, receive, and send data. Each table on the database contains information about the user and the courses. Storing of the data is done using a form element with a POST method, which sends data or information filled on the input fields from the client-side into the server and it is stored in the specific table in the database. This design is implemented throughout the website and it is done with every functionality. There is also an XML file and it is parsed so that contents can be displayed in the HTML.</p>
+    <br />
+
+    <h3><u>Implementation</u>:</h3>
+    <p>For Part 1, I created a database and two tables. Each for users (Users table) and each for the bookmarks contents (Bookmarks table). Data and information is store on these table through the input fields in the forms, which prompts the user to input specific details and then once the submit button is clicked, it will send the data to the database and will store it in the tables. I can also grab data and information from the database back to the interface to display and print for design purposes.</p>
+
+    <p>For Part 2, I created a database and two tables. Each for users (Users table) and each for the courses contents (Courses table). Data and information is store on these table through the input fields in the forms, which prompts the user to input specific details and then once the submit button is clicked, it will send the data to the database and will store it in the tables. I can also grab data and information from the database back to the interface to display and print for design purposes.</p>
+    <br />
+    <br />
+    <h3><u>User Guide</u>:</h3>
+    <ol>
+        <li>Read the documentation completely to understand the purpose of the assignment.</li>
+        <br />
+        <li>Navigate through the parts through the navigation bar on top of the page.</li>
+        <br />
+        <li>By clicking on Part 1 navigation button, the user is directed to the landing page of Part 1. It lists the top 10 bookmarked websites by the users. On the top right, the user can sign-in, sign-up, or logout by clicking on the profile icon. Once signed in, the user can create, edit, delete bookmarked URLs, as well as access their own profile and see their own bookmarked websites.</li>
+        <br />
+        <li>By clicking on Part 2 navigation button, the user is directed to the landing page of Part 2. It lists the current courses available and also the ones added by registered users. A user can sign-in, sign-up, sign-out, and add courses.</li>
+        <br />
+        <br />
+    </ol>
+    <br />
+    
+
+    <br />
+    <h3><u>Other Notes for the Marker</u>:</h3>
+    <p>I would like to thank Dr. Liaqat Ali for responding to my questions quickly. I hope it is easy for you to navigate through my assignment and websites. Thank you! :)</p>
+    <br />
+
+    <hr />
+    <span>Assignment 2 - Amiel De Los Reyes &copy; 2023</span>
+
+</body>
+</html>
